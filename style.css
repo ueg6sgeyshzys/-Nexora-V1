@@ -1,1 +1,72 @@
-/* Nexora */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(180deg,#070b1f,#111c4d);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.loading-screen{
+    text-align:center;
+}
+
+.logo{
+    color:#FFD700;
+    font-size:55px;
+    text-shadow:0 0 15px #FFD700,
+                0 0 35px #FFD700;
+    margin-bottom:40px;
+    animation:glow 2s infinite alternate;
+}
+
+.hero{
+    font-size:120px;
+    margin-bottom:40px;
+    animation:float 2s ease-in-out infinite;
+}
+
+#startBtn{
+    background:#FFD700;
+    color:#000;
+    border:none;
+    padding:18px 50px;
+    border-radius:40px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#startBtn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px gold;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px gold;
+    }
+    to{
+        text-shadow:0 0 40px gold;
+    }
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
